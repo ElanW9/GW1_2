@@ -17,13 +17,14 @@ $password = $_POST["password"];
 // is het de juiste login?
 require("db.php");
 
-$sql = "SELECT id, firstname 
-  FROM users 
+$sql = "SELECT username, password
+  FROM user
   WHERE username = '" . strtolower($username) . "' 
   AND password= MD5('" . $password . "')
   LIMIT 1";
 
 $result = $mysqli->query($sql);
+
 if ($result && $result->num_rows > 0) {
     // Ja, het is de juiste
     $user = $result->fetch_assoc();

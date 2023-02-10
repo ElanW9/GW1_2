@@ -25,10 +25,10 @@ $errors = [
 
     <!-- (C) MENU ITEMS -->
     <div id="hamitems">
-        <a href="/index.html">HOME</a>
-        <a href="/about/a.html">ABOUT</a>
-        <a href="/products/products.php">PRODUCTS</a>
-        <a href="/login.php"><img class="cart" src="../img/cart-shopping-solid-yellow.png" alt="" /></a>
+        <a href="../index.php">HOME</a>
+        <a href="../about.php">ABOUT</a>
+        <a href="./products/products.php">PRODUCTS</a>
+        <a href="../login/login.php"><img class="cart" src="../img/cart-shopping-solid-yellow.png" alt="" /></a>
     </div>
 </nav>
 

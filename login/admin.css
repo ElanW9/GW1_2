@@ -1,0 +1,73 @@
+@import url(../reset.css);
+body {
+  background-image: url(../img/VG_GW_BG\ copy.jpg);
+  background-color: rgb(254, 243, 226);
+}
+
+@font-face {
+  font-family: title;
+  src: url(../fonts/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: tekst;
+  src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+.cart {
+  width: 30px;
+  height: 30px;
+}
+header section h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: title;
+  font-size: 100px;
+  font-weight: bolder;
+  top: 100px;
+  color: #4254b3;
+}
+header section h1 {
+  position: relative;
+}
+header h1::after {
+  content: "";
+  background-color: #4254b3;
+  height: 4px;
+  width: 200px;
+  position: absolute;
+  bottom: -40px;
+  justify-content: center;
+}
+/* admin main */
+main {
+  padding: 200px;
+}
+.main_title {
+  padding-bottom: 20px;
+  font-family: title;
+  font-size: 75px;
+  font-weight: bolder;
+  color: #4254b3;
+}
+main a {
+  text-decoration: none;
+  color: rgb(254, 243, 226);
+}
+form {
+  font-family: tekst;
+  font-size: 20px;
+  color: #4254b3;
+}
+button {
+  background-color: #56a1a5;
+  border: none;
+  border-radius: 10px;
+  color: rgb(254, 243, 226);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

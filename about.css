@@ -1,0 +1,236 @@
+@import url(./reset.css);
+body {
+  background-color: rgb(254, 243, 226);
+  background-image: url(./img/VG_GW_BG\ copy.jpg);
+
+  /* overflow: hidden; */
+}
+
+@font-face {
+  font-family: title;
+  src: url(./fonts/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: tekst;
+  src: url(./fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+.cart {
+  width: 30px;
+  height: 30px;
+}
+header section h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: title;
+  font-size: 100px;
+  font-weight: bolder;
+  top: 100px;
+  color: #4254b3;
+}
+header section h1 {
+  position: relative;
+}
+header h1::after {
+  content: "";
+  background-color: #4254b3;
+  height: 4px;
+  width: 200px;
+  position: absolute;
+  bottom: -40px;
+  justify-content: center;
+}
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+  font-family: tekst;
+
+  width: 100%;
+  background: #56a1a5;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  font-family: tekst;
+
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #4254b3;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #56a1a5;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #f8d31e;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+.main_title {
+  padding-bottom: 20px;
+  font-family: title;
+  font-size: 75px;
+  font-weight: bolder;
+  color: #4254b3;
+  padding: 100px;
+}
+
+/************************/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-family: tekst;
+  background-color: #fffbe2 0.75;
+  font-size: 20px;
+  padding: 70px;
+}
+.container {
+  font-family: title;
+  font-size: 30px;
+  color: #f8d31e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 300px;
+  padding: 100px;
+}
+.d1 {
+  width: 300px;
+  height: auto;
+}
+.d2 {
+  width: 300px;
+  height: auto;
+}
+.d3 {
+  width: 300px;
+  height: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    font-family: title;
+    font-size: 30px;
+    color: #f8d31e;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 700px;
+    padding: 100px;
+  }
+  .d1 {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+  .d2 {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+  .d3 {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    font-family: title;
+    font-size: 30px;
+    color: #f8d31e;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 600px;
+    padding: 100px;
+  }
+  .d1 {
+    width: 300px;
+    height: auto;
+  }
+  .d2 {
+    width: 300px;
+    height: auto;
+  }
+  .d3 {
+    width: 300px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    font-family: title;
+    font-size: 30px;
+    color: #f8d31e;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1100px;
+    padding: 200px;
+  }
+  .d1 {
+    width: 300px;
+    height: auto;
+  }
+  .d2 {
+    width: 300px;
+    height: auto;
+  }
+  .d3 {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #56a1a5;
+  font-size: 15px;
+  font-family: "Trebuchet MS";
+  text-align: center;
+  color: rgb(254, 243, 226);
+  padding: 20px;
+}

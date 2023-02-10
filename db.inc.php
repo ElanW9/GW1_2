@@ -13,12 +13,19 @@ try {
 }
 
 
-
 function getProducts()
 {
     global $pdo;
-
     $stmt = $pdo->prepare(" SELECT * FROM `products`");
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getProduct($id)
+{
+    global $pdo;
+
+    $stmt = $pdo->prepare(" SELECT * FROM `products` where id =$id");
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
 }

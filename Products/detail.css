@@ -1,0 +1,161 @@
+@import url(../reset.css);
+body {
+  background-image: url(../img/VG_GW_BG\ copy.jpg);
+  background-color: rgb(254, 243, 226);
+}
+
+@font-face {
+  font-family: title;
+  src: url(../fonts/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: tekst;
+  src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+.cart {
+  width: 30px;
+  height: 30px;
+}
+header section h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: title;
+  font-size: 100px;
+  font-weight: bolder;
+  top: 100px;
+  color: #4254b3;
+}
+header section h1 {
+  position: relative;
+}
+header h1::after {
+  content: "";
+  background-color: #4254b3;
+  height: 4px;
+  width: 200px;
+  position: absolute;
+  bottom: -40px;
+  justify-content: center;
+}
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+  font-family: tekst;
+
+  width: 100%;
+  background: #56a1a5;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  font-family: tekst;
+
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #4254b3;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #56a1a5;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #f8d31e;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+/* detail product */
+h2 {
+  color: #4254b3;
+}
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #56a1a5;
+}
+main {
+  padding: 100px;
+}
+
+.main_title {
+  padding-bottom: 20px;
+  font-family: title;
+  font-size: 75px;
+  font-weight: bolder;
+  color: #4254b3;
+}
+.main_title:hover {
+  color: #56a1a5;
+  cursor: pointer;
+}
+.parent {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: (5, max-content);
+}
+
+.parent img {
+  width: 100%;
+}
+.parent div {
+  border: 2px solid #f5e69b;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px 5px #9d956440;
+  padding: 10px;
+}
+
+.parent div h3 {
+  font-family: tekst;
+}
+
+.parent div p {
+  padding-top: 5px;
+  font-family: tekst;
+}
+
+/* footer */
+footer {
+  background-color: #56a1a5;
+  font-size: 15px;
+  font-family: "Trebuchet MS";
+  text-align: center;
+  color: rgb(254, 243, 226);
+  padding: 20px;
+}
